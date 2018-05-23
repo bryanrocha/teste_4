@@ -5246,3 +5246,278 @@ Stack Trace:
 #18 {main}
 
 
+2018-05-15 20:26:47 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Users could not be found.
+Request URL: /users/login?redirect=%2Famigo
+Stack Trace:
+#0 /Users/bryanrocha/cakephp/teste_4/vendor/cakephp/cakephp/src/Http/ControllerFactory.php(38): Cake\Http\ControllerFactory->missingController(Object(Cake\Http\ServerRequest))
+#1 /Users/bryanrocha/cakephp/teste_4/vendor/cakephp/cakephp/src/Http/ActionDispatcher.php(90): Cake\Http\ControllerFactory->create(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#2 /Users/bryanrocha/cakephp/teste_4/vendor/cakephp/cakephp/src/Http/BaseApplication.php(228): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#3 /Users/bryanrocha/cakephp/teste_4/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#4 /Users/bryanrocha/cakephp/teste_4/vendor/cakephp/cakephp/src/Routing/Middleware/RoutingMiddleware.php(158): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#5 /Users/bryanrocha/cakephp/teste_4/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#6 /Users/bryanrocha/cakephp/teste_4/vendor/cakephp/cakephp/src/Routing/Middleware/AssetMiddleware.php(88): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#7 /Users/bryanrocha/cakephp/teste_4/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#8 /Users/bryanrocha/cakephp/teste_4/vendor/cakephp/cakephp/src/Error/Middleware/ErrorHandlerMiddleware.php(98): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#9 /Users/bryanrocha/cakephp/teste_4/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#10 /Users/bryanrocha/cakephp/teste_4/vendor/cakephp/cakephp/src/Http/Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#11 /Users/bryanrocha/cakephp/teste_4/vendor/cakephp/cakephp/src/Http/Server.php(98): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#12 /Users/bryanrocha/cakephp/teste_4/webroot/index.php(40): Cake\Http\Server->run()
+#13 {main}
+
+
+2018-05-15 20:27:26 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Users could not be found.
+Request URL: /users/login
+Stack Trace:
+#0 /Users/bryanrocha/cakephp/teste_4/vendor/cakephp/cakephp/src/Http/ControllerFactory.php(38): Cake\Http\ControllerFactory->missingController(Object(Cake\Http\ServerRequest))
+#1 /Users/bryanrocha/cakephp/teste_4/vendor/cakephp/cakephp/src/Http/ActionDispatcher.php(90): Cake\Http\ControllerFactory->create(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#2 /Users/bryanrocha/cakephp/teste_4/vendor/cakephp/cakephp/src/Http/BaseApplication.php(228): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#3 /Users/bryanrocha/cakephp/teste_4/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#4 /Users/bryanrocha/cakephp/teste_4/vendor/cakephp/cakephp/src/Routing/Middleware/RoutingMiddleware.php(158): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#5 /Users/bryanrocha/cakephp/teste_4/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#6 /Users/bryanrocha/cakephp/teste_4/vendor/cakephp/cakephp/src/Routing/Middleware/AssetMiddleware.php(88): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#7 /Users/bryanrocha/cakephp/teste_4/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#8 /Users/bryanrocha/cakephp/teste_4/vendor/cakephp/cakephp/src/Error/Middleware/ErrorHandlerMiddleware.php(98): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#9 /Users/bryanrocha/cakephp/teste_4/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#10 /Users/bryanrocha/cakephp/teste_4/vendor/cakephp/cakephp/src/Http/Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#11 /Users/bryanrocha/cakephp/teste_4/vendor/cakephp/cakephp/src/Http/Server.php(98): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#12 /Users/bryanrocha/cakephp/teste_4/webroot/index.php(40): Cake\Http\Server->run()
+#13 {main}
+
+
+2018-05-15 20:27:37 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Users could not be found.
+Request URL: /users/login?redirect=%2Famigo
+Stack Trace:
+#0 /Users/bryanrocha/cakephp/teste_4/vendor/cakephp/cakephp/src/Http/ControllerFactory.php(38): Cake\Http\ControllerFactory->missingController(Object(Cake\Http\ServerRequest))
+#1 /Users/bryanrocha/cakephp/teste_4/vendor/cakephp/cakephp/src/Http/ActionDispatcher.php(90): Cake\Http\ControllerFactory->create(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#2 /Users/bryanrocha/cakephp/teste_4/vendor/cakephp/cakephp/src/Http/BaseApplication.php(228): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#3 /Users/bryanrocha/cakephp/teste_4/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#4 /Users/bryanrocha/cakephp/teste_4/vendor/cakephp/cakephp/src/Routing/Middleware/RoutingMiddleware.php(158): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#5 /Users/bryanrocha/cakephp/teste_4/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#6 /Users/bryanrocha/cakephp/teste_4/vendor/cakephp/cakephp/src/Routing/Middleware/AssetMiddleware.php(88): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#7 /Users/bryanrocha/cakephp/teste_4/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#8 /Users/bryanrocha/cakephp/teste_4/vendor/cakephp/cakephp/src/Error/Middleware/ErrorHandlerMiddleware.php(98): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#9 /Users/bryanrocha/cakephp/teste_4/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#10 /Users/bryanrocha/cakephp/teste_4/vendor/cakephp/cakephp/src/Http/Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#11 /Users/bryanrocha/cakephp/teste_4/vendor/cakephp/cakephp/src/Http/Server.php(98): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#12 /Users/bryanrocha/cakephp/teste_4/webroot/index.php(40): Cake\Http\Server->run()
+#13 {main}
+
+
+2018-05-15 20:27:42 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Users could not be found.
+Request URL: /users/login?redirect=%2Famigo
+Stack Trace:
+#0 /Users/bryanrocha/cakephp/teste_4/vendor/cakephp/cakephp/src/Http/ControllerFactory.php(38): Cake\Http\ControllerFactory->missingController(Object(Cake\Http\ServerRequest))
+#1 /Users/bryanrocha/cakephp/teste_4/vendor/cakephp/cakephp/src/Http/ActionDispatcher.php(90): Cake\Http\ControllerFactory->create(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#2 /Users/bryanrocha/cakephp/teste_4/vendor/cakephp/cakephp/src/Http/BaseApplication.php(228): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#3 /Users/bryanrocha/cakephp/teste_4/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#4 /Users/bryanrocha/cakephp/teste_4/vendor/cakephp/cakephp/src/Routing/Middleware/RoutingMiddleware.php(158): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#5 /Users/bryanrocha/cakephp/teste_4/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#6 /Users/bryanrocha/cakephp/teste_4/vendor/cakephp/cakephp/src/Routing/Middleware/AssetMiddleware.php(88): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#7 /Users/bryanrocha/cakephp/teste_4/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#8 /Users/bryanrocha/cakephp/teste_4/vendor/cakephp/cakephp/src/Error/Middleware/ErrorHandlerMiddleware.php(98): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#9 /Users/bryanrocha/cakephp/teste_4/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#10 /Users/bryanrocha/cakephp/teste_4/vendor/cakephp/cakephp/src/Http/Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#11 /Users/bryanrocha/cakephp/teste_4/vendor/cakephp/cakephp/src/Http/Server.php(98): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#12 /Users/bryanrocha/cakephp/teste_4/webroot/index.php(40): Cake\Http\Server->run()
+#13 {main}
+
+
+2018-05-15 20:37:06 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Users could not be found.
+Request URL: /users/
+Stack Trace:
+#0 /Users/bryanrocha/cakephp/teste_4/vendor/cakephp/cakephp/src/Http/ControllerFactory.php(38): Cake\Http\ControllerFactory->missingController(Object(Cake\Http\ServerRequest))
+#1 /Users/bryanrocha/cakephp/teste_4/vendor/cakephp/cakephp/src/Http/ActionDispatcher.php(90): Cake\Http\ControllerFactory->create(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#2 /Users/bryanrocha/cakephp/teste_4/vendor/cakephp/cakephp/src/Http/BaseApplication.php(228): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#3 /Users/bryanrocha/cakephp/teste_4/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#4 /Users/bryanrocha/cakephp/teste_4/vendor/cakephp/cakephp/src/Routing/Middleware/RoutingMiddleware.php(158): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#5 /Users/bryanrocha/cakephp/teste_4/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#6 /Users/bryanrocha/cakephp/teste_4/vendor/cakephp/cakephp/src/Routing/Middleware/AssetMiddleware.php(88): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#7 /Users/bryanrocha/cakephp/teste_4/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#8 /Users/bryanrocha/cakephp/teste_4/vendor/cakephp/cakephp/src/Error/Middleware/ErrorHandlerMiddleware.php(98): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#9 /Users/bryanrocha/cakephp/teste_4/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#10 /Users/bryanrocha/cakephp/teste_4/vendor/cakephp/cakephp/src/Http/Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#11 /Users/bryanrocha/cakephp/teste_4/vendor/cakephp/cakephp/src/Http/Server.php(98): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#12 /Users/bryanrocha/cakephp/teste_4/webroot/index.php(40): Cake\Http\Server->run()
+#13 {main}
+
+
+2018-05-15 20:49:03 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Users could not be found.
+Request URL: /users/login?redirect=%2Famigo%2Fedit%2F3
+Referer URL: http://localhost:8765/amigo
+Stack Trace:
+#0 /Users/bryanrocha/cakephp/teste_4/vendor/cakephp/cakephp/src/Http/ControllerFactory.php(38): Cake\Http\ControllerFactory->missingController(Object(Cake\Http\ServerRequest))
+#1 /Users/bryanrocha/cakephp/teste_4/vendor/cakephp/cakephp/src/Http/ActionDispatcher.php(90): Cake\Http\ControllerFactory->create(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#2 /Users/bryanrocha/cakephp/teste_4/vendor/cakephp/cakephp/src/Http/BaseApplication.php(228): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#3 /Users/bryanrocha/cakephp/teste_4/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#4 /Users/bryanrocha/cakephp/teste_4/vendor/cakephp/cakephp/src/Routing/Middleware/RoutingMiddleware.php(158): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#5 /Users/bryanrocha/cakephp/teste_4/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#6 /Users/bryanrocha/cakephp/teste_4/vendor/cakephp/cakephp/src/Routing/Middleware/AssetMiddleware.php(88): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#7 /Users/bryanrocha/cakephp/teste_4/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#8 /Users/bryanrocha/cakephp/teste_4/vendor/cakephp/cakephp/src/Error/Middleware/ErrorHandlerMiddleware.php(98): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#9 /Users/bryanrocha/cakephp/teste_4/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#10 /Users/bryanrocha/cakephp/teste_4/vendor/cakephp/cakephp/src/Http/Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#11 /Users/bryanrocha/cakephp/teste_4/vendor/cakephp/cakephp/src/Http/Server.php(98): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#12 /Users/bryanrocha/cakephp/teste_4/webroot/index.php(40): Cake\Http\Server->run()
+#13 {main}
+
+
+2018-05-15 20:49:06 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Users could not be found.
+Request URL: /users/login?redirect=%2Famigo%2Fview%2F3
+Referer URL: http://localhost:8765/amigo
+Stack Trace:
+#0 /Users/bryanrocha/cakephp/teste_4/vendor/cakephp/cakephp/src/Http/ControllerFactory.php(38): Cake\Http\ControllerFactory->missingController(Object(Cake\Http\ServerRequest))
+#1 /Users/bryanrocha/cakephp/teste_4/vendor/cakephp/cakephp/src/Http/ActionDispatcher.php(90): Cake\Http\ControllerFactory->create(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#2 /Users/bryanrocha/cakephp/teste_4/vendor/cakephp/cakephp/src/Http/BaseApplication.php(228): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#3 /Users/bryanrocha/cakephp/teste_4/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#4 /Users/bryanrocha/cakephp/teste_4/vendor/cakephp/cakephp/src/Routing/Middleware/RoutingMiddleware.php(158): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#5 /Users/bryanrocha/cakephp/teste_4/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#6 /Users/bryanrocha/cakephp/teste_4/vendor/cakephp/cakephp/src/Routing/Middleware/AssetMiddleware.php(88): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#7 /Users/bryanrocha/cakephp/teste_4/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#8 /Users/bryanrocha/cakephp/teste_4/vendor/cakephp/cakephp/src/Error/Middleware/ErrorHandlerMiddleware.php(98): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#9 /Users/bryanrocha/cakephp/teste_4/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#10 /Users/bryanrocha/cakephp/teste_4/vendor/cakephp/cakephp/src/Http/Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#11 /Users/bryanrocha/cakephp/teste_4/vendor/cakephp/cakephp/src/Http/Server.php(98): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#12 /Users/bryanrocha/cakephp/teste_4/webroot/index.php(40): Cake\Http\Server->run()
+#13 {main}
+
+
+2018-05-15 20:49:17 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Users could not be found.
+Request URL: /users/login?redirect=%2Famigo%2Fadd
+Referer URL: http://localhost:8765/amigo
+Stack Trace:
+#0 /Users/bryanrocha/cakephp/teste_4/vendor/cakephp/cakephp/src/Http/ControllerFactory.php(38): Cake\Http\ControllerFactory->missingController(Object(Cake\Http\ServerRequest))
+#1 /Users/bryanrocha/cakephp/teste_4/vendor/cakephp/cakephp/src/Http/ActionDispatcher.php(90): Cake\Http\ControllerFactory->create(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#2 /Users/bryanrocha/cakephp/teste_4/vendor/cakephp/cakephp/src/Http/BaseApplication.php(228): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#3 /Users/bryanrocha/cakephp/teste_4/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#4 /Users/bryanrocha/cakephp/teste_4/vendor/cakephp/cakephp/src/Routing/Middleware/RoutingMiddleware.php(158): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#5 /Users/bryanrocha/cakephp/teste_4/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#6 /Users/bryanrocha/cakephp/teste_4/vendor/cakephp/cakephp/src/Routing/Middleware/AssetMiddleware.php(88): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#7 /Users/bryanrocha/cakephp/teste_4/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#8 /Users/bryanrocha/cakephp/teste_4/vendor/cakephp/cakephp/src/Error/Middleware/ErrorHandlerMiddleware.php(98): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#9 /Users/bryanrocha/cakephp/teste_4/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#10 /Users/bryanrocha/cakephp/teste_4/vendor/cakephp/cakephp/src/Http/Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#11 /Users/bryanrocha/cakephp/teste_4/vendor/cakephp/cakephp/src/Http/Server.php(98): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#12 /Users/bryanrocha/cakephp/teste_4/webroot/index.php(40): Cake\Http\Server->run()
+#13 {main}
+
+
+2018-05-15 20:51:59 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Users could not be found.
+Request URL: /users/login?redirect=%2Flogin%2Fadd
+Referer URL: http://localhost:8765/login
+Stack Trace:
+#0 /Users/bryanrocha/cakephp/teste_4/vendor/cakephp/cakephp/src/Http/ControllerFactory.php(38): Cake\Http\ControllerFactory->missingController(Object(Cake\Http\ServerRequest))
+#1 /Users/bryanrocha/cakephp/teste_4/vendor/cakephp/cakephp/src/Http/ActionDispatcher.php(90): Cake\Http\ControllerFactory->create(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#2 /Users/bryanrocha/cakephp/teste_4/vendor/cakephp/cakephp/src/Http/BaseApplication.php(228): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#3 /Users/bryanrocha/cakephp/teste_4/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#4 /Users/bryanrocha/cakephp/teste_4/vendor/cakephp/cakephp/src/Routing/Middleware/RoutingMiddleware.php(158): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#5 /Users/bryanrocha/cakephp/teste_4/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#6 /Users/bryanrocha/cakephp/teste_4/vendor/cakephp/cakephp/src/Routing/Middleware/AssetMiddleware.php(88): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#7 /Users/bryanrocha/cakephp/teste_4/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#8 /Users/bryanrocha/cakephp/teste_4/vendor/cakephp/cakephp/src/Error/Middleware/ErrorHandlerMiddleware.php(98): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#9 /Users/bryanrocha/cakephp/teste_4/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#10 /Users/bryanrocha/cakephp/teste_4/vendor/cakephp/cakephp/src/Http/Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#11 /Users/bryanrocha/cakephp/teste_4/vendor/cakephp/cakephp/src/Http/Server.php(98): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#12 /Users/bryanrocha/cakephp/teste_4/webroot/index.php(40): Cake\Http\Server->run()
+#13 {main}
+
+
+2018-05-15 20:52:33 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Users could not be found.
+Request URL: /users/login?redirect=%2Flogin%2Fadd
+Referer URL: http://localhost:8765/login
+Stack Trace:
+#0 /Users/bryanrocha/cakephp/teste_4/vendor/cakephp/cakephp/src/Http/ControllerFactory.php(38): Cake\Http\ControllerFactory->missingController(Object(Cake\Http\ServerRequest))
+#1 /Users/bryanrocha/cakephp/teste_4/vendor/cakephp/cakephp/src/Http/ActionDispatcher.php(90): Cake\Http\ControllerFactory->create(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#2 /Users/bryanrocha/cakephp/teste_4/vendor/cakephp/cakephp/src/Http/BaseApplication.php(228): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#3 /Users/bryanrocha/cakephp/teste_4/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#4 /Users/bryanrocha/cakephp/teste_4/vendor/cakephp/cakephp/src/Routing/Middleware/RoutingMiddleware.php(158): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#5 /Users/bryanrocha/cakephp/teste_4/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#6 /Users/bryanrocha/cakephp/teste_4/vendor/cakephp/cakephp/src/Routing/Middleware/AssetMiddleware.php(88): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#7 /Users/bryanrocha/cakephp/teste_4/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#8 /Users/bryanrocha/cakephp/teste_4/vendor/cakephp/cakephp/src/Error/Middleware/ErrorHandlerMiddleware.php(98): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#9 /Users/bryanrocha/cakephp/teste_4/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#10 /Users/bryanrocha/cakephp/teste_4/vendor/cakephp/cakephp/src/Http/Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#11 /Users/bryanrocha/cakephp/teste_4/vendor/cakephp/cakephp/src/Http/Server.php(98): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#12 /Users/bryanrocha/cakephp/teste_4/webroot/index.php(40): Cake\Http\Server->run()
+#13 {main}
+
+
+2018-05-15 20:52:42 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Users could not be found.
+Request URL: /users/login?redirect=%2Flogin%2Fadd
+Referer URL: http://localhost:8765/login
+Stack Trace:
+#0 /Users/bryanrocha/cakephp/teste_4/vendor/cakephp/cakephp/src/Http/ControllerFactory.php(38): Cake\Http\ControllerFactory->missingController(Object(Cake\Http\ServerRequest))
+#1 /Users/bryanrocha/cakephp/teste_4/vendor/cakephp/cakephp/src/Http/ActionDispatcher.php(90): Cake\Http\ControllerFactory->create(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#2 /Users/bryanrocha/cakephp/teste_4/vendor/cakephp/cakephp/src/Http/BaseApplication.php(228): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#3 /Users/bryanrocha/cakephp/teste_4/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#4 /Users/bryanrocha/cakephp/teste_4/vendor/cakephp/cakephp/src/Routing/Middleware/RoutingMiddleware.php(158): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#5 /Users/bryanrocha/cakephp/teste_4/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#6 /Users/bryanrocha/cakephp/teste_4/vendor/cakephp/cakephp/src/Routing/Middleware/AssetMiddleware.php(88): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#7 /Users/bryanrocha/cakephp/teste_4/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#8 /Users/bryanrocha/cakephp/teste_4/vendor/cakephp/cakephp/src/Error/Middleware/ErrorHandlerMiddleware.php(98): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#9 /Users/bryanrocha/cakephp/teste_4/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#10 /Users/bryanrocha/cakephp/teste_4/vendor/cakephp/cakephp/src/Http/Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#11 /Users/bryanrocha/cakephp/teste_4/vendor/cakephp/cakephp/src/Http/Server.php(98): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#12 /Users/bryanrocha/cakephp/teste_4/webroot/index.php(40): Cake\Http\Server->run()
+#13 {main}
+
+
+2018-05-15 20:52:59 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Users could not be found.
+Request URL: /users/login?redirect=%2Flogin%2Fadd
+Referer URL: http://localhost:8765/login
+Stack Trace:
+#0 /Users/bryanrocha/cakephp/teste_4/vendor/cakephp/cakephp/src/Http/ControllerFactory.php(38): Cake\Http\ControllerFactory->missingController(Object(Cake\Http\ServerRequest))
+#1 /Users/bryanrocha/cakephp/teste_4/vendor/cakephp/cakephp/src/Http/ActionDispatcher.php(90): Cake\Http\ControllerFactory->create(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#2 /Users/bryanrocha/cakephp/teste_4/vendor/cakephp/cakephp/src/Http/BaseApplication.php(228): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#3 /Users/bryanrocha/cakephp/teste_4/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#4 /Users/bryanrocha/cakephp/teste_4/vendor/cakephp/cakephp/src/Routing/Middleware/RoutingMiddleware.php(158): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#5 /Users/bryanrocha/cakephp/teste_4/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#6 /Users/bryanrocha/cakephp/teste_4/vendor/cakephp/cakephp/src/Routing/Middleware/AssetMiddleware.php(88): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#7 /Users/bryanrocha/cakephp/teste_4/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#8 /Users/bryanrocha/cakephp/teste_4/vendor/cakephp/cakephp/src/Error/Middleware/ErrorHandlerMiddleware.php(98): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#9 /Users/bryanrocha/cakephp/teste_4/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#10 /Users/bryanrocha/cakephp/teste_4/vendor/cakephp/cakephp/src/Http/Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#11 /Users/bryanrocha/cakephp/teste_4/vendor/cakephp/cakephp/src/Http/Server.php(98): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#12 /Users/bryanrocha/cakephp/teste_4/webroot/index.php(40): Cake\Http\Server->run()
+#13 {main}
+
+
+2018-05-15 20:53:06 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Users could not be found.
+Request URL: /users/login?redirect=%2Flogin%2Fview%2F27
+Referer URL: http://localhost:8765/login
+Stack Trace:
+#0 /Users/bryanrocha/cakephp/teste_4/vendor/cakephp/cakephp/src/Http/ControllerFactory.php(38): Cake\Http\ControllerFactory->missingController(Object(Cake\Http\ServerRequest))
+#1 /Users/bryanrocha/cakephp/teste_4/vendor/cakephp/cakephp/src/Http/ActionDispatcher.php(90): Cake\Http\ControllerFactory->create(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#2 /Users/bryanrocha/cakephp/teste_4/vendor/cakephp/cakephp/src/Http/BaseApplication.php(228): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#3 /Users/bryanrocha/cakephp/teste_4/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#4 /Users/bryanrocha/cakephp/teste_4/vendor/cakephp/cakephp/src/Routing/Middleware/RoutingMiddleware.php(158): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#5 /Users/bryanrocha/cakephp/teste_4/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#6 /Users/bryanrocha/cakephp/teste_4/vendor/cakephp/cakephp/src/Routing/Middleware/AssetMiddleware.php(88): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#7 /Users/bryanrocha/cakephp/teste_4/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#8 /Users/bryanrocha/cakephp/teste_4/vendor/cakephp/cakephp/src/Error/Middleware/ErrorHandlerMiddleware.php(98): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#9 /Users/bryanrocha/cakephp/teste_4/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#10 /Users/bryanrocha/cakephp/teste_4/vendor/cakephp/cakephp/src/Http/Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#11 /Users/bryanrocha/cakephp/teste_4/vendor/cakephp/cakephp/src/Http/Server.php(98): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#12 /Users/bryanrocha/cakephp/teste_4/webroot/index.php(40): Cake\Http\Server->run()
+#13 {main}
+
+
+2018-05-15 21:13:21 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Users could not be found.
+Request URL: /users/login?redirect=%2Flogin%2Fadd
+Referer URL: http://localhost:8765/login
+Stack Trace:
+#0 /Users/bryanrocha/cakephp/teste_4/vendor/cakephp/cakephp/src/Http/ControllerFactory.php(38): Cake\Http\ControllerFactory->missingController(Object(Cake\Http\ServerRequest))
+#1 /Users/bryanrocha/cakephp/teste_4/vendor/cakephp/cakephp/src/Http/ActionDispatcher.php(90): Cake\Http\ControllerFactory->create(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#2 /Users/bryanrocha/cakephp/teste_4/vendor/cakephp/cakephp/src/Http/BaseApplication.php(228): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#3 /Users/bryanrocha/cakephp/teste_4/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#4 /Users/bryanrocha/cakephp/teste_4/vendor/cakephp/cakephp/src/Routing/Middleware/RoutingMiddleware.php(158): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#5 /Users/bryanrocha/cakephp/teste_4/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#6 /Users/bryanrocha/cakephp/teste_4/vendor/cakephp/cakephp/src/Routing/Middleware/AssetMiddleware.php(88): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#7 /Users/bryanrocha/cakephp/teste_4/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#8 /Users/bryanrocha/cakephp/teste_4/vendor/cakephp/cakephp/src/Error/Middleware/ErrorHandlerMiddleware.php(98): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#9 /Users/bryanrocha/cakephp/teste_4/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#10 /Users/bryanrocha/cakephp/teste_4/vendor/cakephp/cakephp/src/Http/Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#11 /Users/bryanrocha/cakephp/teste_4/vendor/cakephp/cakephp/src/Http/Server.php(98): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#12 /Users/bryanrocha/cakephp/teste_4/webroot/index.php(40): Cake\Http\Server->run()
+#13 {main}
+
+
