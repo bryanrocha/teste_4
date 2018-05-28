@@ -2,6 +2,7 @@
 namespace App\Controller;
 
 use App\Controller\AppController;
+use Cake\Event\Event;
 
 /**
  * Amigo Controller
@@ -13,6 +14,11 @@ use App\Controller\AppController;
 class AmigoController extends AppController
 {
 
+    public function beforeFilter(Event $event) 
+    {
+        parent::beforeFilter($event);
+        $this->Auth->allow(['index', 'view']);
+    }
 
     /**
      * Index method
@@ -22,6 +28,7 @@ class AmigoController extends AppController
     public function index()
     {
         $this->viewBuilder()->setLayout('novo_teste');
+        $this->paginate = ['limit' => 10];
         $amigo = $this->paginate($this->Amigo);
 
         $this->set(compact('amigo'));

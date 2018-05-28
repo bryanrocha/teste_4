@@ -14,7 +14,6 @@ use Cake\ORM\Entity;
  * @property string $instagram
  * @property string $twitter
  * @property string $telefone
- * @property int $login_id
  */
 class Amigo extends Entity
 {
@@ -35,7 +34,6 @@ class Amigo extends Entity
         'facebook' => true,
         'instagram' => true,
         'twitter' => true,
-        'telefone' => true,
-        'login_id' => true
+        'telefone' => true
     ];
 }

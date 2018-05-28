@@ -43,7 +43,10 @@ class AppController extends Controller
 
         $this->loadComponent('RequestHandler', ['enableBeforeRedirect' => false]);
         $this->loadComponent('Flash');
-        $this->loadComponent('Auth');
+        $this->loadComponent('Auth', [
+            'loginRedirect' => ['controller' => 'Amigo', 'action' => 'index'],
+            'logoutRedirect' => ['controller' => 'Users', 'action' => 'login', 'home']
+        ]);
 
         /*
          * Enable the following components for recommended CakePHP security settings.
@@ -55,6 +58,6 @@ class AppController extends Controller
 
     public function beforeFilter(Event $event)
     {
-        $this->Auth->allow(['index']);
+        // $this->Auth->allow('index');
     }
 }
