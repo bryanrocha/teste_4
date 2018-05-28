@@ -53,11 +53,7 @@ $cakeDescription = 'Teste de aplicação';
                         <?= $this->Html->link(__('Listar Contatos'), ['controller' => 'Amigo', 'action' => 'index'], ['class' => 'dropdown-item']) ?>
                     </div>
                 </li>
-                <li class="nav-item active">
-                    <!-- <a class="nav-link" href="/logout">
-                        <?= $this->fetch('title') ?>
-                        <span class="sr-only">(current)</span>
-                    </a> -->
+                <li class="nav-item active">                    
                     <?= $this->Html->link(__('Sair'), ['controller' => 'Users', 'action' => 'logout'], ['class' => 'nav-link']) ?>
                 </li>
             </ul>
