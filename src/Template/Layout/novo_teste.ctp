@@ -38,7 +38,7 @@ $cakeDescription = 'Teste de aplicação';
 
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav mr-auto">
-                
+
                 <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                       Menu
@@ -49,7 +49,7 @@ $cakeDescription = 'Teste de aplicação';
                     </div>
                 </li>
                 <li class="nav-item active">                    
-                    <?= $this->Html->link(__('Sair'), ['controller' => 'Users', 'action' => 'logout'], ['class' => 'nav-link']) ?>
+                    <?= $this->Html->link(__('Sair ('.$this->request->getSession()->read('Auth.User.username').')'), ['controller' => 'Users', 'action' => 'logout'], ['class' => 'nav-link']) ?>
                 </li>
             </ul>
         </div>
