@@ -45,6 +45,7 @@ use Cake\Utility\Inflector;
 use Cake\Utility\Security;
 
 Plugin::load('Migrations');
+// Plugin::load('bootstrap');
 
 /**
  * Uncomment block of code below if you want to use `.env` file during development.

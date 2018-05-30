@@ -10,7 +10,7 @@
     <table class="table table-striped table-sm w-auto">
         
         <th><?= $this->Paginator->sort('nome') ?></th>
-        <th><?= $this->Paginator->sort('aniversario') ?></th>
+        <th><?= $this->Paginator->sort('aniversario', __('Aniversário')) ?></th>
         <th><?= $this->Paginator->sort('cidade') ?></th>
         <th><?= $this->Paginator->sort('telefone') ?></th>
         <th></th>
@@ -33,18 +33,32 @@
 
     </table>
 
-    <div class="paginator">
+    <?php
+        $paginator = $this->Paginator->setTemplates([
+            'first' => '<li class="page-item"><a href="{{url}}" class="page-link">{{text}}</a></li>',
+            'prevActive' => '<li class="page-item"><a href="{{url}}" class="page-link">{{text}}</a></li>',
+            'number' => '<li class="page-item"><a href="{{url}}" class="page-link">{{text}}</a></li>',
+            'current' => '<li class="page-item active"><a href="{{url}}" class="page-link">{{text}}</a></li>',
+            'nextActive' => '<li class="page-item"><a href="{{url}}" class="page-link">{{text}}</a></li>',
+            'last' => '<li class="page-item"><a href="{{url}}" class="page-link">{{text}}</a></li>'
+        ]);
+    ?>
         
-        <ul class="pagination">
-            
-            <?= $this->Paginator->first('<< ' . __('Primeiro')) ?>
-            <?= $this->Paginator->prev(' < ' . __('Anterior')) ?>
-            <?= $this->Paginator->numbers() ?>
-            <?= $this->Paginator->next(__('Próximo') . ' > ') ?>
-            <?= $this->Paginator->last(__('Último') . ' >>') ?>
+    <ul class="pagination">
+        
+        <?= $this->Paginator->first('<<') ?>
+        <?php 
+            if($this->Paginator->hasPrev())
+                echo $this->Paginator->prev('<'); 
+        ?>
+        <?= $this->Paginator->numbers() ?>
+        <?php 
+            if($this->Paginator->hasNext())
+                echo $this->Paginator->next('>'); 
+        ?>
+        <?= $this->Paginator->last('>>') ?>
 
-        </ul>
+    </ul>
 
-    </div>
 
 </div>
